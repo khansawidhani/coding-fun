@@ -3,6 +3,6 @@
 
 ### List of Code-Snippets 🔨:
 
-1. [Password Validator]()
+1. [Password Validator](https://github.com/khansawidhani/coding-fun/tree/main/validatePassword)
 
 
