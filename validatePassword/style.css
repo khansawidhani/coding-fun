@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root{
-    --primary : cadetblue;
+    --primary : rgb(36, 107, 199);
     --bgPure: rgb(242, 248, 248);
 }
 *{
@@ -17,13 +17,23 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
+}
+.title{
+    color: var(--bgPure);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.title h1{
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
 }
 .wrapper{
     width: 300px;
     background-color: var(--bgPure);
     padding: 2rem;
     border-radius: .5rem;
-
 }
 .wrapper .pass-field{
     position: relative;
@@ -65,8 +75,16 @@ body{
 }
 .wrapper .requirement-list li i{
     margin-right: 1rem;
-    font-size: .7rem;
+    font-size: 1rem;
+    color: #999;
+}
+.wrapper .requirement-list li.valid i{
+    color: var(--primary);
+    font-size: 1.4rem;
 }
 .wrapper .requirement-list li p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+}
+.wrapper .requirement-list li.valid p{
+    color: #999;
 }
