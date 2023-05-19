@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --primary : cadetblue;
+    --bgPure: rgb(242, 248, 248);
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    width: 300px;
+    background-color: var(--bgPure);
+    padding: 2rem;
+    border-radius: .5rem;
+
+}
+.wrapper .pass-field{
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+.wrapper .pass-field input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.wrapper .pass-field input:active{
+    border: none;
+}
+.wrapper .pass-field i{
+    right: 1.7rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+.wrapper p.text{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.wrapper .requirement-list li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0 .5rem;
+}
+.wrapper .requirement-list li i{
+    margin-right: 1rem;
+    font-size: .7rem;
+}
+.wrapper .requirement-list li p{
+    font-size: 1.2rem;
+}
