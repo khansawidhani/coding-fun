@@ -4,6 +4,6 @@
 ### List of Code-Snippets 🔨:
 
 1. [Password Validator](https://github.com/khansawidhani/coding-fun/tree/main/validatePassword)
-1. [DropDown Menu](https://github.com/khansawidhani/coding-fun/tree/main/dropDownMenu)
+2. [DropDown Menu](https://github.com/khansawidhani/coding-fun/tree/main/dropDownMenu)
 
 
