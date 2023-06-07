@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Apps</title>
+</head>
+
+<body>
+    <div class="outer">
+        <button id="popupBox" class="show"> Show Popup Box </button>
+
+        <div class="popUp">
+            <h1>Login</h1>
+            <input type="text"><br />
+            <input type="password">
+            <div class="buttons">
+                <button id="login"> Login </button>
+                <button id="cancel"> Cancel </button>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    const popupButton = document.getElementById('popupBox');
+    const popupBox = document.querySelector(".popUp");
+    const cancelButton = document.getElementById('cancel');
+    popupButton.addEventListener('click', () => {
+        toggleClasses();
+    });
+    cancelButton.addEventListener('click', () => {
+        toggleClasses();
+    });
+    function toggleClasses() {
+        popupBox.classList.toggle('show')
+        popupButton.classList.toggle('show');
+    }
+</script>
+
+</html>
