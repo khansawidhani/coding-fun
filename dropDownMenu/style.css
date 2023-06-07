@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+:root{
+    --blue: #0a74d8;
+    --green: #36db89;
+    --dark: #111;
+    --light: #999;
+    --white: #fff;
+    --borderColor: rgba(0,0,0,0.1);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image:linear-gradient(45deg, var(--blue), var(--green));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.card{
+    background-color: var(--white);
+    width: 28rem;
+    height: 9rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 1.95px 1.95px 2.6px var(--borderColor);
+    padding: 1rem 2rem 0 ;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transition: height .4s ease-in-out;
+
+}
+.card.active{
+    height: 32rem;
+
+}
+.card .content{
+    display: flex;
+    align-items: center;
+}
+.imgBox{
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    border-radius: 50%;
+    perspective-origin: top;
+}
+.imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .content h2{
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    color: var(--dark);
+}
+.card .content h2 span{
+    font-size: 1.3rem;
+    color: var(--light);
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+.card .navigation{
+    position: absolute;
+    top: 9.5rem;
+    left: 0;
+    padding: 1rem 0;
+    border-top: 1px solid var(--borderColor);
+    width: 100%;
+}
+.navigation li{
+    list-style-type: none;
+    margin: 0 1.5rem;
+}
+.navigation li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.6rem;
+    padding: .8rem 0;
+    transition: color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.navigation li a:hover{
+    color: var(--blue);
+}
+.navigation li a ion-icon{
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+.toggle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+.toggle ion-icon{
+    color: var(--white);
+    font-size: 3rem;
+    margin: .2rem;
+    transition: transform .05s ease-in-out;
+}
+.card.active .toggle ion-icon{
+    transform: rotate(-180deg);
+}
