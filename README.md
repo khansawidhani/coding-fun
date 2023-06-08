@@ -7,6 +7,5 @@
 2. [DropDown Menu](https://github.com/khansawidhani/coding-fun/tree/main/dropDownMenu)
 3. [Popup Form Modal](https://github.com/khansawidhani/coding-fun/tree/main/popupModal)
 4. [CounterUp Animation onScroll](https://github.com/khansawidhani/coding-fun/tree/main/counterUpAnimation)
-5. 
 
 
