@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.home-img{
+    background-image: url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.title{
+    padding: 20px 30px;
+}
+.title h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.title p{
+    padding-bottom: 20px;
+    font-size: 14px;
+
+}
+.counter-up{
+    background-image: url("https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    /* padding: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh; */
+    width: 100%;
+    position: relative;
+
+
+}
+.counter-up::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.5);
+
+}
+.counter-up .content{
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(34, 34, 33); */
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 80px;
+}
+.counter-up .content .box{
+    border: 1px dashed rgba(255,255,255, 0.6);
+    border-radius: 5px;
+    width: calc(25% - 80px);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+}
+.counter-up .content .box .icon{
+    font-size: 48px;
+    color: #e6e6e6;
+}
+.counter-up .content .box .counter{
+    font-size: 50px;
+    color: #f2f2f2;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.counter-up .content .box .text{
+    /* font-size: 26px; */
+    color: #ccc;
+    text-align: center;
+    font-weight: 400;
+
+}
